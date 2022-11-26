@@ -20,6 +20,8 @@ import {
   footerData,
 } from "../data";
 import NewLanding from "../src/components/NewLanding";
+import Skills from "../src/components/skills";
+import WorkEducation from "../src/components/WorkEducation";
 
 export default function Home() {
   const [hero, setHero] = useState({});
@@ -50,7 +52,9 @@ export default function Home() {
         <main>
           {" "}
           <NewLanding />
-          <Hero />
+          {/* <Hero /> */}
+          <Skills />
+          {/* <WorkEducation /> */}
           <About />
           <Projects />
           <Contact />

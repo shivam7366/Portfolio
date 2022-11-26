@@ -5,8 +5,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import PortfolioContext from "../context/context";
 import Title from "./Title";
 // import ProjectImg from '../Image/ProjectImg';
-import projectImg from "../images/project.jpg";
+
 import Image from "next/image";
+import { Link } from "react-scroll";
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -31,6 +32,7 @@ const Projects = () => {
           <Title title="Projects" />
           {projects.map((project) => {
             const { title, info, info2, url, repo, img, id } = project;
+            console.log(img);
 
             return (
               <Row key={id}>
@@ -105,13 +107,15 @@ const Projects = () => {
                         >
                           <div data-tilt className="thumbnail rounded">
                             {/* <ProjectImg alt={title} filename={img} /> */}
-                            <Image
-                              className="rounded shadow-lg"
-                              src={projectImg}
-                              alt="profile picture"
-                              width={200}
-                              height={"auto"}
-                            />
+                            <div style={{ width: "100%", height: "auto" }}>
+                              <img
+                                className="rounded shadow-lg pppp"
+                                src={img}
+                                alt="profile picture"
+                                // width="100%"
+                                // height="auto"
+                              />
+                            </div>
                           </div>
                         </Tilt>
                       </a>
@@ -121,6 +125,21 @@ const Projects = () => {
               </Row>
             );
           })}
+          <div className="text-center mt-5">
+            <p className="hero-cta mt-5">
+              <span className="cta-btn cta-btn--hero">
+                <Link
+                  rel="noopener noreferrer"
+                  href="/project"
+                  to="/project"
+                  smooth
+                  duration={800}
+                >
+                  Explore More
+                </Link>
+              </span>
+            </p>
+          </div>
         </div>
       </Container>
     </section>

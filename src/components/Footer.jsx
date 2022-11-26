@@ -12,10 +12,10 @@ const Footer = () => {
   const { isEnabled } = githubButtons;
 
   return (
-    <footer className="footer navbar-static-bottom">
+    <footer className="footer navbar-static-bottom text-center">
       <Container>
         <span className="back-to-top">
-          <Link to="hero" smooth duration={1000}>
+          <Link to="landing" smooth duration={1000}>
             <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
           </Link>
         </span>
@@ -26,7 +26,7 @@ const Footer = () => {
               return (
                 <a
                   key={id}
-                  href={url || "https://github.com/cobidev/gatsby-simplefolio"}
+                  href={url || "https://github.com/shivam7366"}
                   rel="noopener noreferrer"
                   target="_blank"
                   aria-label={name}
@@ -38,13 +38,13 @@ const Footer = () => {
         </div>
         <hr />
         <p className="footer__text">
-          © {new Date().getFullYear()} - Template developed by{" "}
+          © {new Date().getFullYear()} -{" "}
           <a
-            href="https://github.com/cobidev"
+            href="https://github.com/shivam7366"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Jacobo Martínez
+            Shivam Gupta
           </a>
         </p>
 

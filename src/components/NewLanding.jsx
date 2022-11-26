@@ -1,16 +1,16 @@
 import React from "react";
 import { Fade, Reveal } from "react-reveal";
-import banner from "../images/introimg1.svg";
-import man from "../images/man.png";
-import table from "../images/table.png";
+import banner from "../../images/introimg1.svg";
+import man from "../../images/man.png";
+import table from "../../images/table.png";
 import Image from "next/image";
-import cup from "../images/cup.png";
-import codeshadow from "../images/codeshadow.png";
-import php from "../images/php.png";
-import cpp from "../images/cpp.png";
-import search from "../images/search.png";
-import html from "../images/html.png";
-import bracket from "../images/bracket.png";
+import cup from "../../images/cup.png";
+import codeshadow from "../../images/codeshadow.png";
+import php from "../../images/php.png";
+import cpp from "../../images/cpp.png";
+import search from "../../images/search.png";
+import html from "../../images/html.png";
+import bracket from "../../images/bracket.png";
 import { Link } from "react-scroll";
 
 function NewLanding() {
@@ -27,7 +27,7 @@ function NewLanding() {
     }
   }, []);
   return (
-    <section className="intropage p-0">
+    <section id="landing" className="intropage p-0">
       <div class="home_bubble">
         <div class="bubble b_one"></div>
 
@@ -80,7 +80,7 @@ function NewLanding() {
             </div>
           </div>
 
-          <div className="col-lg-6">
+          <div className="col-lg-6 ">
             <div className="frelencer_image">
               <Fade right duration={500} distance="30px">
                 <Image src={table} alt="table" className="f_img_two" />

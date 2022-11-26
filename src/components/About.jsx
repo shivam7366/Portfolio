@@ -3,11 +3,12 @@ import Fade from "react-reveal/Fade";
 import { Container, Row, Col } from "react-bootstrap";
 import Title from "./Title";
 // import AboutImg from "./AboutImg";
-import profile from "../images/profile.jpg";
+import profile from "../../images/profile.jpg";
 import PortfolioContext from "../context/context";
 import Image from "next/image";
 
 const About = () => {
+  console.log(profile);
   const { about } = useContext(PortfolioContext);
   const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
 
@@ -56,14 +57,14 @@ const About = () => {
                   {paragraphOne ||
                     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae."}
                 </p>
-                <p className="about-wrapper__info-text">
+                {/* <p className="about-wrapper__info-text">
                   {paragraphTwo ||
                     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae."}
                 </p>
                 <p className="about-wrapper__info-text">
                   {paragraphThree ||
                     "Lorem ipsum dolor sit, amet consectetur adipisicing elit."}
-                </p>
+                </p> */}
                 {resume && (
                   <span className="d-flex mt-3">
                     <a

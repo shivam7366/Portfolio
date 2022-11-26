@@ -31,12 +31,12 @@ const Header = () => {
           delay={500}
           distance="30px"
         >
-          <h1 className="hero-title">
+          {/* <h1 className="hero-title">
             {title || "Hi, my name is"}{" "}
             <span className="text-color-main">{name || "Your Name"}</span>
             <br />
             {subtitle || "I'm the Unknown Developer."}
-          </h1>
+          </h1> */}
         </Fade>
         <Fade
           left={isDesktop}
@@ -45,13 +45,13 @@ const Header = () => {
           delay={1000}
           distance="30px"
         >
-          <p className="hero-cta">
+          {/* <p className="hero-cta">
             <span className="cta-btn cta-btn--hero">
               <Link to="about" smooth duration={1000}>
                 {cta || "Know more"}
               </Link>
             </span>
-          </p>
+          </p> */}
         </Fade>
       </Container>
     </section>
